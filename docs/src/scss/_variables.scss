@@ -1,8 +1,14 @@
-// Variables
-$font-primary: "Arial";
+// Fonts
+$font-primary: 'Open Sans',
+sans-serif;
 $font-secondary: "Mono";
+// Colours
 $colour-primary: #f7f7f7;
 $colour-secondary: #f0f0f0;
 $colour-accent: #1111;
-$colour-background: #fff;
+$colour-background: #262a2d;
+$colour-dark: #101517;
+// FX
+$shadow: 0px 4px 30px -6px rgba(0, 0, 0, .6);
+// Size
 $container-width: 960px;
