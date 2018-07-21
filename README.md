@@ -1,10 +1,9 @@
-# BitSwiss
+# BitSwiss :v:
+
 Website for blockchain investment bank BitSwiss.
 
-(Under construction)
+> Under construction
 
-[See demo.](https://lukeberetta.github.io/bitswiss/)
+[Live demo.](https://lukeberetta.github.io/bitswiss/)
 
----
-
-#### By Luke Beretta
+###### © Luke Beretta
