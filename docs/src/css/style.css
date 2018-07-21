@@ -17,7 +17,7 @@ a {
   color: #fff;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
-  a:hover {
+  a:hover, a:active {
     opacity: .9;
     -webkit-transform: scale(0.975);
     transform: scale(0.975); }

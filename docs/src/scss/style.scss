@@ -20,7 +20,8 @@ a {
   text-decoration: none;
   color: #fff;
   transition: $transition;
-  &:hover {
+  &:hover,
+  &:active {
     opacity: .9;
     transform: scale(.975);
   }
