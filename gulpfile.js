@@ -12,10 +12,10 @@ gulp.task("sass", () => gulp.src(["src/scss/*.scss"])
 // Watch & serve
 gulp.task("serve", ["sass"], function() {
   browserSync.init({
-    server: "./src"
+    server: "./docs"
   });
   gulp.watch(["src/scss/*.scss"], ["sass"]);
-  gulp.watch(["src/*.html"]).on("change", browserSync.reload);
+  gulp.watch(["./docs/*.html"]).on("change", browserSync.reload);
 });
 
 // Default
