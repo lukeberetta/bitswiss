@@ -88,7 +88,6 @@ section {
 
 .container {
   width: 85%; // max-width: $container-width;
-  background-color: $colour-background;
   margin: $margin-container;
   padding: 20px;
   display: flex;
@@ -99,6 +98,8 @@ section {
   box-shadow: $shadow;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: $colour-background;
+  background-image: linear-gradient($colour-background, #212427);
 }
 
 .card-body {
