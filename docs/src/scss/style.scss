@@ -32,15 +32,6 @@ ul {
   list-style: none;
 }
 
-// Prevent over-scroll
-// html {
-//   overflow: hidden;
-//   height: 100%;
-// }
-// body {
-//   height: 100%;
-//   overflow: auto;
-// }
 // Fonts
 p {
   font-weight: 100;
@@ -58,6 +49,9 @@ header {
   .container {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .logo {
+    height: 25px;
   }
 }
 
@@ -98,8 +92,7 @@ section {
   box-shadow: $shadow;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: $colour-background;
-  background-image: linear-gradient($colour-background, #212427);
+  background-color: $colour-background; // background-image: linear-gradient($colour-background, #212427);
 }
 
 .card-body {
