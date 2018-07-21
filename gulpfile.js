@@ -1,10 +1,12 @@
 const gulp = require("gulp");
+const plumber = require("gulp-plumber");
 const sass = require("gulp-sass");
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require("browser-sync").create();
 
 // Compile sass
 gulp.task("sass", () => gulp.src(["./docs/src/scss/*.scss"])
+  .pipe(plumber())
   .pipe(sass())
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
