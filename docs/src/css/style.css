@@ -190,3 +190,18 @@ section {
 #card-1-over {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#262a2d00), to(#262a2d));
   background-image: linear-gradient(#262a2d00, #262a2d); }
+
+#card-2-over {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-2.png"); }
+
+#card-3-over {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-3.png"); }
+
+#card-4-over {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-4.png"); }

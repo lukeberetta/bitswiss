@@ -185,3 +185,21 @@ section {
 #card-1-over {
   background-image: $gradient-footer;
 }
+
+#card-2-over {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-2.png");
+}
+
+#card-3-over {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-3.png");
+}
+
+#card-4-over {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-4.png");
+}
