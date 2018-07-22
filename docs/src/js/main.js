@@ -1,7 +1,10 @@
 // Mobile menu
-let canScroll = true;
+let isOpen = false;
 
 function toggleMenu() {
+
+  let timeoutA = (isOpen) ? 200 : 0;
+  let timeoutB = (!isOpen) ? 300 : 0;
 
   let menu = document.querySelector(".menu");
   let list = document.querySelector(".menu-list");
@@ -9,26 +12,28 @@ function toggleMenu() {
   let footer = document.querySelector("footer");
   let header = document.querySelector(".container");
 
-  menu.classList.toggle("hide");
-  body.classList.toggle("no-scroll");
-  footer.classList.toggle("hide");
-  header.classList.toggle("card");
+  setTimeout(() => {
+    menu.classList.toggle("hide");
+    body.classList.toggle("no-scroll");
+    footer.classList.toggle("hide");
+    header.classList.toggle("card");
+  }, timeoutA);
 
   setTimeout(() => {
     list.classList.toggle("grow");
-  }, 300);
+  }, timeoutB);
 
   disableScroll();
 }
 
 function disableScroll() {
-  if (canScroll) {
-    canScroll = false;
+  if (isOpen) {
+    isOpen = false;
     document.ontouchmove = function(e) {
       e.preventDefault();
     };
   } else {
-    canScroll = true;
+    isOpen = true;
     document.ontouchmove = function(e) {
       return true;
     };

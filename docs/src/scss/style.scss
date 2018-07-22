@@ -51,6 +51,7 @@ header {
     z-index: 9;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
   }
   .logo {
     height: 25px;
@@ -96,7 +97,7 @@ footer {
 
 // Theme
 main {
-  margin-top: 85px;
+  margin-top: 80px;
   flex-grow: 1;
   overflow: auto;
   .container {
@@ -105,7 +106,7 @@ main {
 }
 
 section {
-  height: 82vh;
+  height: 84vh;
   transition: $transition;
 }
 
@@ -253,7 +254,7 @@ section {
 .grow {
   opacity: 0;
   z-index: -11;
-  transform: scale(0);
+  transform: scale(0.5);
 }
 
 .no-scroll {
