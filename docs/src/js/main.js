@@ -14,4 +14,9 @@ function toggleMenu() {
   setTimeout(() => {
     list.classList.toggle("grow");
   }, 300);
+
+  // Disable scrolling.
+  document.ontouchmove = function(e) {
+    e.preventDefault();
+  };
 }
