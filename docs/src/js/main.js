@@ -1,5 +1,5 @@
 // Mobile menu
-let canScroll;
+let canScroll = true;
 
 function toggleMenu() {
 
@@ -27,6 +27,7 @@ function disableScroll() {
       e.preventDefault();
     };
   } else {
+    canScroll = true;
     document.ontouchmove = function(e) {
       return true;
     };
