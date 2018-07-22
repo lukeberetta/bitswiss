@@ -22,7 +22,8 @@ a {
   transition: $transition;
   &:hover,
   &:active {
-    opacity: .9;
+    cursor: pointer;
+    opacity: .8 !important;
     transform: scale(.975);
   }
 }
@@ -57,6 +58,7 @@ header {
 }
 
 #coverup {
+  display: none;
   z-index: -1;
   position: fixed;
   top: 0;
@@ -68,7 +70,7 @@ header {
 
 // Footer
 footer {
-  z-index: 99;
+  z-index: 77;
   width: 100%;
   position: fixed;
   top: auto;
@@ -104,6 +106,7 @@ main {
 
 section {
   height: 82vh;
+  transition: $transition;
 }
 
 .container {
@@ -120,7 +123,7 @@ section {
   box-shadow: $shadow;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: $colour-background; // background-image: linear-gradient($colour-background, #212427);
+  background-color: $colour-background;
 }
 
 .center {
@@ -208,4 +211,28 @@ section {
 .icon {
   margin-bottom: 20px;
   height: 35px;
+}
+
+// Menu
+.menu {
+  opacity: 1;
+  position: fixed;
+  z-index: 88;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d1f20ee;
+  .container {
+    height: 70vh;
+    margin-top: 95px;
+    background-color: #00000000;
+  }
+  ul {
+    margin: auto;
+  }
+}
+
+.hide {
+  opacity: 0;
+  z-index: -88;
 }
