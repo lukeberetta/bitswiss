@@ -27,13 +27,13 @@ function toggleMenu() {
 }
 
 function disableScroll() {
-  if (isOpen) {
-    isOpen = false;
+  if (!isOpen) {
+    isOpen = true;
     document.ontouchmove = function(e) {
       e.preventDefault();
     };
   } else {
-    isOpen = true;
+    isOpen = false;
     document.ontouchmove = function(e) {
       return true;
     };
