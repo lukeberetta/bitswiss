@@ -1,4 +1,6 @@
 // Mobile menu
+let canScroll;
+
 function toggleMenu() {
 
   let menu = document.querySelector(".menu");
@@ -15,8 +17,18 @@ function toggleMenu() {
     list.classList.toggle("grow");
   }, 300);
 
-  // Disable scrolling.
-  document.ontouchmove = function(e) {
-    e.preventDefault();
-  };
+  disableScroll();
+}
+
+function disableScroll() {
+  if (canScroll) {
+    canScroll = false;
+    document.ontouchmove = function(e) {
+      e.preventDefault();
+    };
+  } else {
+    document.ontouchmove = function(e) {
+      return true;
+    };
+  }
 }
