@@ -13,6 +13,7 @@ function toggleMenu() {
   body.classList.toggle("no-scroll");
   footer.classList.toggle("hide");
   header.classList.toggle("card");
+
   setTimeout(() => {
     list.classList.toggle("grow");
   }, 300);
