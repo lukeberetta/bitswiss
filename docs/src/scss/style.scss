@@ -76,15 +76,14 @@ footer {
   position: fixed;
   top: auto;
   bottom: 0;
-  padding: 30px 0;
-  background-image: $gradient-footer;
+  padding: 25px 0; // background-image: $gradient-footer;
   ul {
     display: flex;
     justify-content: center;
     li {
-      margin: 0 3px;
-      height: 2px;
-      width: 20px;
+      margin: 0 2px;
+      height: 1px;
+      width: 30px;
       font-size: 1.5em;
       opacity: .2;
       background-color: #fff;
@@ -98,6 +97,7 @@ footer {
 // Theme
 main {
   margin-top: 80px;
+  margin-bottom: 40px;
   flex-grow: 1;
   overflow: auto;
   .container {
