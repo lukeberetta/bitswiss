@@ -41,12 +41,13 @@ p {
 
 // Header
 header {
-  z-index: 9;
+  z-index: 99;
   position: fixed;
   top: 0;
   bottom: auto;
   text-align: center;
   .container {
+    z-index: 9;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -55,15 +56,40 @@ header {
   }
 }
 
+#coverup {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  background-color: $colour-background;
+  width: 85%;
+  height: 50px;
+}
+
 // Footer
 footer {
-  z-index: 9;
+  z-index: 99;
   width: 100%;
   position: fixed;
   top: auto;
   bottom: 0;
   padding: 30px 0;
-  background-image: linear-gradient( #262a2d00, $colour-background);
+  background-image: $gradient-footer;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 3px;
+      height: 2px;
+      width: 20px;
+      font-size: 1.5em;
+      opacity: .2;
+      background-color: #fff;
+    }
+    .dot-active {
+      opacity: 1;
+    }
+  }
 }
 
 // Theme
@@ -77,7 +103,7 @@ main {
 }
 
 section {
-  height: 88vh;
+  height: 82vh;
 }
 
 .container {
@@ -89,19 +115,12 @@ section {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   box-shadow: $shadow;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: $colour-background; // background-image: linear-gradient($colour-background, #212427);
-}
-
-.card-body {
-  height: 100%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .center {
@@ -130,4 +149,39 @@ section {
   &:active {
     transform: scale(.95);
   }
+}
+
+// Cards
+.card-body {
+  z-index: 10;
+  height: 100%;
+  max-width: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-over,
+.card-under {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-over {
+  z-index: 2;
+}
+
+#card-1-under {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-1.png");
+}
+
+#card-1-over {
+  background-image: $gradient-footer;
 }

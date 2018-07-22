@@ -8,6 +8,8 @@ $colour-secondary: #f0f0f0;
 $colour-accent: #111111;
 $colour-background: #262a2d;
 $colour-dark: #101517;
+// Gradients
+$gradient-footer: linear-gradient( #262a2d00, $colour-background);
 // FX
 $shadow: 0px 4px 30px -6px rgba(0, 0, 0, .4);
 $shadow-light: 0px 4px 30px -6px rgba(0, 0, 0, .2);
