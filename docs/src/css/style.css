@@ -24,9 +24,9 @@ a {
     transform: scale(0.975); }
 
 hr {
-  width: 90%;
+  width: 100%;
   border: .5px solid white;
-  opacity: .2; }
+  opacity: 0; }
 
 ol,
 ul {
@@ -105,7 +105,8 @@ footer {
       opacity: 1; }
 
 main {
-  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 10px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -117,7 +118,7 @@ main {
     flex-direction: column; }
 
 section {
-  height: 84vh;
+  min-height: 84vh;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
@@ -131,7 +132,10 @@ section {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .card {
   position: relative;
@@ -141,6 +145,9 @@ section {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #262a2d; }
+
+.card-hide {
+  background-color: #14141420; }
 
 .center {
   display: -webkit-box;
@@ -182,12 +189,30 @@ section {
 .btn-thin {
   background-image: none;
   background-color: #ffffff04;
-  border: 2px solid #ffffff05; }
+  border: 2px solid #ffffff02; }
+
+.btn-signup {
+  color: #fd6868; }
 
 .menu .btn-thin {
-  padding: 22px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 0;
+  height: 9vh;
+  max-height: 65px;
   width: 80vw;
-  max-width: 400px; }
+  max-width: 400px;
+  margin: 0 0 25px 0; }
 
 .card-body {
   z-index: 10;
@@ -251,12 +276,12 @@ section {
 #card-6-over {
   background-size: cover;
   background-position: center;
-  background-image: url("../img/card-4.png"); }
+  background-image: url("../img/card-2.png"); }
 
 #card-6-under {
   background-size: cover;
   background-position: center;
-  background-image: url("../img/card-1.png"); }
+  background-image: url("../img/card-4.png"); }
 
 .card-stat {
   margin: 40px; }
@@ -285,8 +310,8 @@ section {
   -webkit-transition: all .5s;
   transition: all .5s; }
   .menu .container {
-    height: 65vh;
-    margin-top: 95px;
+    height: 90vh;
+    margin-top: 55px;
     background-color: #00000000; }
   .menu ul {
     margin: auto;
@@ -309,7 +334,7 @@ section {
 
 .hero h1, .hero .contact ul, .contact .hero ul {
   font-weight: 100;
-  font-size: 2em; }
+  font-size: 2.1em; }
 
 #hero-image-wrapper,
 #hero-image,
@@ -330,21 +355,28 @@ section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#262a2d00), to(#2e3235));
   background-image: linear-gradient(#262a2d00, #2e3235); }
 
+.contact hr {
+  margin: 45px 0; }
+
 .contact p {
-  font-size: .8em;
+  font-size: .9em;
   opacity: 1; }
 
 .contact ul {
   width: 100%;
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
   .contact ul li {
-    padding: 10px; }
+    padding: 10px;
+    font-size: .7em; }
+
+.contact .address {
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 1.5px; }
 
 #widget {
   margin: 40px 0;

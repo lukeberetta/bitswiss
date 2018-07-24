@@ -29,9 +29,9 @@ a {
 }
 
 hr {
-  width: 90%;
+  width: 100%;
   border: .5px solid white;
-  opacity: .2;
+  opacity: 0;
 }
 
 ol,
@@ -119,8 +119,8 @@ footer {
 
 // Theme
 main {
-  // margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 10px;
   flex-grow: 1;
   overflow: auto;
   .container {
@@ -129,7 +129,7 @@ main {
 }
 
 section {
-  height: 84vh;
+  min-height: 84vh; // max-height: 100vh;
   transition: $transition;
 }
 
@@ -140,6 +140,7 @@ section {
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -149,6 +150,10 @@ section {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: $colour-background;
+}
+
+.card-hide {
+  background-color: #14141420;
 }
 
 .center {
@@ -184,14 +189,25 @@ section {
   // box-shadow: $shadow;
   background-image: none;
   background-color: #ffffff04;
-  border: 2px solid #ffffff05;
+  border: 2px solid #ffffff02;
+}
+
+.btn-signup {
+  color: rgb(253, 104, 104);
 }
 
 .menu {
   .btn-thin {
-    padding: 22px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    height: 9vh;
+    max-height: 65px;
     width: 80vw;
     max-width: 400px;
+    margin: 0 0 25px 0;
   }
 }
 
@@ -257,13 +273,13 @@ section {
 #card-6-over {
   background-size: cover;
   background-position: center;
-  background-image: url("../img/card-4.png");
+  background-image: url("../img/card-2.png");
 }
 
 #card-6-under {
   background-size: cover;
   background-position: center;
-  background-image: url("../img/card-1.png");
+  background-image: url("../img/card-4.png");
 }
 
 .card-stat {
@@ -299,8 +315,8 @@ section {
   background-image: $gradient-blu;
   transition: all .5s;
   .container {
-    height: 65vh;
-    margin-top: 95px;
+    height: 90vh;
+    margin-top: 55px;
     background-color: #00000000;
   }
   ul {
@@ -330,7 +346,7 @@ section {
 .hero {
   h1 {
     font-weight: 100;
-    font-size: 2em;
+    font-size: 2.1em;
   }
 }
 
@@ -357,19 +373,28 @@ section {
 
 // Contact 
 .contact {
+  hr {
+    margin: 45px 0;
+  }
   p {
-    font-size: .8em;
+    font-size: .9em;
     opacity: 1;
   }
   ul {
     width: 100%; // height: 100%;
-    margin-top: 50px;
+    // margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     @extend h1;
     li {
       padding: 10px;
+      font-size: .7em;
     }
+  }
+  .address {
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1.5px;
   }
 }
 
