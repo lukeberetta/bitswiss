@@ -40,6 +40,11 @@ p {
   letter-spacing: .6px;
 }
 
+h1 {
+  font-weight: 400;
+  font-size: 1.7em;
+}
+
 // Header
 header {
   z-index: 99;
@@ -135,7 +140,8 @@ section {
 }
 
 // Buttons
-.btn {
+.btn,
+.btn-thin {
   background-image: $gradient-blu;
   border-radius: 10px;
   padding: 15px;
@@ -157,11 +163,16 @@ section {
 
 .btn-thin {
   // box-shadow: $shadow;
-  padding: 25px 0;
-  width: 82vw;
   background-image: none;
   background-color: #ffffff04;
-  border: 2px solid #0000c92a;
+  border: 2px solid #ffffff10;
+}
+
+.menu {
+  .btn-thin {
+    padding: 25px 0;
+    width: 82vw;
+  }
 }
 
 // Cards
@@ -260,4 +271,12 @@ section {
 .no-scroll {
   height: 100%;
   overflow: hidden;
+}
+
+// Hero
+.hero {
+  h1 {
+    font-weight: 100;
+    font-size: 2.3em;
+  }
 }

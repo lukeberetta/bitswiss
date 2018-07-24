@@ -32,6 +32,10 @@ p {
   font-size: .92em;
   letter-spacing: .6px; }
 
+h1 {
+  font-weight: 400;
+  font-size: 1.7em; }
+
 header {
   z-index: 99;
   position: fixed;
@@ -136,7 +140,8 @@ section {
   align-items: center;
   width: 100%; }
 
-.btn {
+.btn,
+.btn-thin {
   background-image: linear-gradient(45deg, #1b0597, #1c3eff);
   border-radius: 10px;
   padding: 15px;
@@ -147,21 +152,26 @@ section {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer; }
-  .btn p {
+  .btn p,
+  .btn-thin p {
     opacity: 1; }
-  .btn:hover {
+  .btn:hover,
+  .btn-thin:hover {
     -webkit-box-shadow: 0px 4px 50px -10px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 4px 50px -10px rgba(0, 0, 0, 0.3); }
-  .btn:active {
+  .btn:active,
+  .btn-thin:active {
     -webkit-transform: scale(0.95);
     transform: scale(0.95); }
 
 .btn-thin {
-  padding: 25px 0;
-  width: 82vw;
   background-image: none;
   background-color: #ffffff04;
-  border: 2px solid #0000c92a; }
+  border: 2px solid #ffffff10; }
+
+.menu .btn-thin {
+  padding: 25px 0;
+  width: 82vw; }
 
 .card-body {
   z-index: 10;
@@ -254,3 +264,7 @@ section {
 .no-scroll {
   height: 100%;
   overflow: hidden; }
+
+.hero h1 {
+  font-weight: 100;
+  font-size: 2.3em; }
