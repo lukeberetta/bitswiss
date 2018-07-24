@@ -6,7 +6,7 @@ body {
   -webkit-tap-highlight-color: #00000000;
   -webkit-font-smoothing: antialiased;
   text-align: center;
-  background-color: #262a2d;
+  background-color: #2e3235;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   height: 100%;
@@ -23,18 +23,33 @@ a {
     -webkit-transform: scale(0.975);
     transform: scale(0.975); }
 
+hr {
+  width: 90%;
+  border: .5px solid white;
+  opacity: .2; }
+
 ol,
 ul {
   list-style: none; }
 
 p {
   font-weight: 100;
-  font-size: .92em;
+  font-size: .95em;
   letter-spacing: .6px; }
 
-h1 {
+h1, .contact ul {
   font-weight: 400;
   font-size: 1.7em; }
+
+h2 {
+  margin-top: 40px;
+  font-weight: 100;
+  font-size: 2.5em; }
+
+h5 {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: .8em; }
 
 header {
   z-index: 99;
@@ -90,7 +105,6 @@ footer {
       opacity: 1; }
 
 main {
-  margin-top: 80px;
   margin-bottom: 40px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -109,6 +123,7 @@ section {
 
 .container {
   width: 85%;
+  max-width: 1080px;
   margin: 8px;
   padding: 20px;
   display: -webkit-box;
@@ -142,7 +157,7 @@ section {
 
 .btn,
 .btn-thin {
-  background-image: linear-gradient(45deg, #1b0597, #1c3eff);
+  background-image: linear-gradient(45deg, #1b0597, #3b59ff);
   border-radius: 10px;
   padding: 15px;
   margin-top: 30px;
@@ -167,11 +182,12 @@ section {
 .btn-thin {
   background-image: none;
   background-color: #ffffff04;
-  border: 2px solid #ffffff10; }
+  border: 2px solid #ffffff05; }
 
 .menu .btn-thin {
-  padding: 25px 0;
-  width: 82vw; }
+  padding: 22px 0;
+  width: 80vw;
+  max-width: 400px; }
 
 .card-body {
   z-index: 10;
@@ -206,26 +222,52 @@ section {
 #card-1-under {
   background-size: cover;
   background-position: center;
-  background-image: url("../img/card-1.png"); }
+  background-image: url("../img/card-3.png"); }
 
 #card-1-over {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#262a2d00), to(#262a2d));
   background-image: linear-gradient(#262a2d00, #262a2d); }
 
-#card-2-over {
+#card-2-under {
   background-size: cover;
   background-position: center;
   background-image: url("../img/card-2.png"); }
 
-#card-3-over {
+#card-3-under {
   background-size: cover;
   background-position: center;
   background-image: url("../img/card-3.png"); }
 
-#card-4-over {
+#card-4-under {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-2.png"); }
+
+#card-5-under {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-3.png"); }
+
+#card-6-over {
   background-size: cover;
   background-position: center;
   background-image: url("../img/card-4.png"); }
+
+#card-6-under {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-1.png"); }
+
+.card-stat {
+  margin: 40px; }
+  .card-stat h2 {
+    color: #fff;
+    margin: 0 0 10px 0; }
+  .card-stat p {
+    opacity: .9; }
+  .card-stat a {
+    opacity: 1;
+    font-weight: 400; }
 
 .icon {
   margin-bottom: 20px;
@@ -239,7 +281,7 @@ section {
   width: 100vw;
   height: 100vh;
   background-color: #0000ff;
-  background-image: linear-gradient(45deg, #1b0597, #1c3eff);
+  background-image: linear-gradient(45deg, #1b0597, #3b59ff);
   -webkit-transition: all .5s;
   transition: all .5s; }
   .menu .container {
@@ -265,6 +307,49 @@ section {
   height: 100%;
   overflow: hidden; }
 
-.hero h1 {
+.hero h1, .hero .contact ul, .contact .hero ul {
   font-weight: 100;
-  font-size: 2.3em; }
+  font-size: 2em; }
+
+#hero-image-wrapper,
+#hero-image,
+#hero-image-over {
+  z-index: -9;
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  position: fixed; }
+
+#hero-image {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-0.png"); }
+
+#hero-image-over {
+  z-index: -5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#262a2d00), to(#2e3235));
+  background-image: linear-gradient(#262a2d00, #2e3235); }
+
+.contact p {
+  font-size: .8em;
+  opacity: 1; }
+
+.contact ul {
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .contact ul li {
+    padding: 10px; }
+
+#widget {
+  margin: 40px 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  background-color: #2e3235; }

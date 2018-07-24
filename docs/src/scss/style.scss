@@ -9,7 +9,7 @@ body {
   -webkit-tap-highlight-color: #00000000;
   -webkit-font-smoothing: antialiased;
   text-align: center;
-  background-color: $colour-background;
+  background-color: $colour-background-light;
   font-family: $font-primary;
   color: #fff;
   height: 100%;
@@ -28,6 +28,12 @@ a {
   }
 }
 
+hr {
+  width: 90%;
+  border: .5px solid white;
+  opacity: .2;
+}
+
 ol,
 ul {
   list-style: none;
@@ -36,13 +42,25 @@ ul {
 // Fonts
 p {
   font-weight: 100;
-  font-size: .92em;
+  font-size: .95em;
   letter-spacing: .6px;
 }
 
 h1 {
   font-weight: 400;
   font-size: 1.7em;
+}
+
+h2 {
+  margin-top: 40px;
+  font-weight: 100;
+  font-size: 2.5em; // color: $colour-font-accent;
+}
+
+h5 {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: .8em;
 }
 
 // Header
@@ -101,7 +119,7 @@ footer {
 
 // Theme
 main {
-  margin-top: 80px;
+  // margin-top: 80px;
   margin-bottom: 40px;
   flex-grow: 1;
   overflow: auto;
@@ -116,7 +134,8 @@ section {
 }
 
 .container {
-  width: 85%; // max-width: $container-width;
+  width: 85%;
+  max-width: $container-width;
   margin: $margin-container;
   padding: 20px;
   display: flex;
@@ -165,13 +184,14 @@ section {
   // box-shadow: $shadow;
   background-image: none;
   background-color: #ffffff04;
-  border: 2px solid #ffffff10;
+  border: 2px solid #ffffff05;
 }
 
 .menu {
   .btn-thin {
-    padding: 25px 0;
-    width: 82vw;
+    padding: 22px 0;
+    width: 80vw;
+    max-width: 400px;
   }
 }
 
@@ -203,29 +223,62 @@ section {
 #card-1-under {
   background-size: cover;
   background-position: center;
-  background-image: url("../img/card-1.png");
+  background-image: url("../img/card-3.png");
 }
 
 #card-1-over {
   background-image: $gradient-footer;
 }
 
-#card-2-over {
+#card-2-under {
   background-size: cover;
   background-position: center;
   background-image: url("../img/card-2.png");
 }
 
-#card-3-over {
+#card-3-under {
   background-size: cover;
   background-position: center;
   background-image: url("../img/card-3.png");
 }
 
-#card-4-over {
+#card-4-under {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-2.png");
+}
+
+#card-5-under {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-3.png");
+}
+
+#card-6-over {
   background-size: cover;
   background-position: center;
   background-image: url("../img/card-4.png");
+}
+
+#card-6-under {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-1.png");
+}
+
+.card-stat {
+  margin: 40px;
+  h2 {
+    color: #fff;
+    margin: 0 0 10px 0;
+  }
+  p {
+    opacity: .9;
+  }
+  a {
+    opacity: 1;
+    font-weight: 400;
+  }
 }
 
 // Icons
@@ -277,6 +330,55 @@ section {
 .hero {
   h1 {
     font-weight: 100;
-    font-size: 2.3em;
+    font-size: 2em;
   }
+}
+
+#hero-image-wrapper,
+#hero-image,
+#hero-image-over {
+  z-index: -9;
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  position: fixed;
+}
+
+#hero-image {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/card-0.png");
+}
+
+#hero-image-over {
+  z-index: -5;
+  background-image: $gradient-hero;
+}
+
+// Contact 
+.contact {
+  p {
+    font-size: .8em;
+    opacity: 1;
+  }
+  ul {
+    width: 100%; // height: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    @extend h1;
+    li {
+      padding: 10px;
+    }
+  }
+}
+
+// Widget
+#widget {
+  margin: 40px 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  background-color: $colour-background-light;
 }
