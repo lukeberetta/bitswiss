@@ -37,7 +37,7 @@ p {
   font-size: .95em;
   letter-spacing: .6px; }
 
-h1, .contact ul {
+h1, .container-footerlinks ul {
   font-weight: 400;
   font-size: 1.7em; }
 
@@ -118,7 +118,8 @@ main {
     flex-direction: column; }
 
 section {
-  min-height: 84vh;
+  min-height: 550px;
+  height: 85vh;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
@@ -217,6 +218,7 @@ section {
 .card-body {
   z-index: 10;
   height: 100%;
+  width: 100%;
   max-width: 600px;
   padding: 10px;
   display: -webkit-box;
@@ -332,7 +334,7 @@ section {
   height: 100%;
   overflow: hidden; }
 
-.hero h1, .hero .contact ul, .contact .hero ul {
+.hero h1, .hero .container-footerlinks ul, .container-footerlinks .hero ul {
   font-weight: 100;
   font-size: 2.1em; }
 
@@ -355,6 +357,9 @@ section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#262a2d00), to(#2e3235));
   background-image: linear-gradient(#262a2d00, #2e3235); }
 
+.container-contact {
+  height: 70vh; }
+
 .contact hr {
   margin: 45px 0; }
 
@@ -362,21 +367,28 @@ section {
   font-size: .9em;
   opacity: 1; }
 
-.contact ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  .contact ul li {
-    padding: 10px;
-    font-size: .7em; }
-
 .contact .address {
   font-weight: 400;
   font-size: 1em;
   letter-spacing: 1.5px; }
+
+.container-footerlinks {
+  min-height: 50px;
+  max-height: 50px;
+  bottom: 0; }
+  .container-footerlinks ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+    .container-footerlinks ul li {
+      opacity: .8;
+      padding: 10px;
+      font-size: .7em; }
 
 #widget {
   margin: 40px 0;
@@ -385,3 +397,19 @@ section {
   max-width: 600px;
   height: 200px;
   background-color: #2e3235; }
+
+.anim1 {
+  -webkit-animation: anim1 2s infinite alternate;
+  animation: anim1 2s infinite alternate; }
+
+@-webkit-keyframes anim1 {
+  from {
+    opacity: 1; }
+  to {
+    opacity: .2; } }
+
+@keyframes anim1 {
+  from {
+    opacity: 1; }
+  to {
+    opacity: .2; } }
