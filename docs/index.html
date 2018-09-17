@@ -15,222 +15,184 @@
 
 <body>
 
-  <header class="center">
-    <div class="container card">
-      <a href="">
-        <img src="./src/img/logo.png" alt="home" class="logo">
-      </a>
-      <nav>
-        <a onclick="toggleMenu()">
-          <p>menu</p>
-        </a>
-      </nav>
-    </div>
-    <div id="coverup"></div>
-  </header>
-
-  <!-- Menu -->
-  <div class="center menu hide">
-    <div class="container">
-      <ul class="menu-list grow">
-        <li>
-          <a href="./index.html">
-            <div class="btn btn-thin">Home</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="btn btn-thin">Dashboard</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="btn btn-thin">Deposits</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="btn btn-thin">Login</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="btn btn-thin btn-signup">Sign Up</div>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <!-- Fade -->
+  <div class="fader"></div>
+  <!-- Background -->
+  <div class="hero-image-wrapper">
+    <div class="card-over " id="hero-image-over"></div>
+    <div class="card-under pre-grow" id="hero-image"></div>
   </div>
 
+  <section id="header" class="container">
+    <a href="">
+      <img src="./src/img/logo.png" alt="home" class="logo">
+    </a>
+    <nav>
+      <a onclick="toggleMenu()">
+        <p>menu</p>
+      </a>
+    </nav>
+  </section>
 
-  <main class="center">
+  <!-- Menu -->
+  <section id="menu" class="container menu hide">
+    <ul class="menu-list">
+      <li>
+        <a href="./index.html">
+          <div class="btn btn-thin">Home</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="btn btn-thin">Dashboard</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="btn btn-thin">Deposits</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="btn btn-thin">Login</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="btn btn-thin btn-signup">Sign Up</div>
+        </a>
+      </li>
+    </ul>
+  </section>
 
-    <div class="hero-image-wrapper">
-      <div class="card-over" id="hero-image-over"></div>
-      <div class="card-under" id="hero-image"></div>
-    </div>
+  <main class="container">
 
-    <!-- 0 -->
-    <section class="container">
-      <div class="card-body hero">
-        <h1>The new way
-          <br>to invest.</h1>
+    <section id="hero">
+      <div class="col">
+        <h2>Earn interest on
+          <br>cryptocurrency</h2>
         <br>
         <a href="">
-          <div class="btn btn-hero">
+          <div class="btn btn-thin">
             <p>Get Started</p>
           </div>
         </a>
       </div>
-      <div class="card-over" id="card-0-over"></div>
-      <div class="card-under" id="card-0-under"></div>
     </section>
 
-    <!-- 1 -->
-    <section class="container card">
-      <div class="card-body">
-        <img src="./src/img/icon-2.svg" alt="icon" class="icon">
-        <h1>Earn interest
-          <br>on your crypto</h1>
-        <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laborum molestiae eveniet laudantium odit fugiat
-          veniam quaerat ipsam harum, omnis, maxime at porro repellat, quasi sunt dolor ab et ea.</p>
-        <h2>
-          <span class="anim1">+4%</span>
-        </h2>
-        <h5>more than your bank*</h5>
+    <section id="banner">
+      <div>
+        <h2>10 Million +</h2>
+        <p>USD under management</p>
       </div>
-      <div class="card-over" id="card-1-over"></div>
-      <div class="card-under" id="card-1-under"></div>
-    </section>
-
-    <!-- 2 -->
-    <section class="container card">
-      <div class="card-body">
-        <h1>Low risk.
-          <br>High returns</h1>
-        <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laborum molestiae eveniet laudantium odit fugiat
-          veniam quaerat ipsam harum, omnis, maxime at porro repellat, quasi sunt dolor ab et ea.</p>
-        <a href="">
-          <div class="btn btn-thin">
-            <p>Sign Up</p>
-          </div>
-        </a>
+      <div>
+        <h2>8.5%</h2>
+        <p>Returns on average*</p>
       </div>
-      <div class="card-over" id="card-2-over"></div>
-      <div class="card-under" id="card-2-under"></div>
-    </section>
-
-    <!-- 3 -->
-    <section class="container card">
-      <div class="card-body">
-        <img src="./src/img/icon-3.svg" alt="icon" class="icon">
-        <h1>Unmatched
-          <br>performance</h1>
-        <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laborum molestiae eveniet laudantium odit fugiat
-          veniam quaerat ipsam harum, omnis, maxime at porro repellat, quasi sunt dolor ab et ea.</p>
+      <div>
+        <h2>Trusted</h2>
+        <p>Backed by
+          <a href="">iosiro</a>
+        </p>
       </div>
-      <div class="card-over" id="card-3-over"></div>
-      <div class="card-under" id="card-3-under"></div>
     </section>
 
-    <!-- 4 -->
-    <section class="container card card-hide">
-      <div class="card-body">
-        <h1>See
-          <br>results</h1>
+    <section id="performance">
+      <div class="chart chart-market"></div>
+      <div class="text-right">
+        <h2>Unmatched
+          <br>performance</h2>
+        <br>
+        <p>Our trading bots are optimised and automated for a margin lending strategy: <span> interest
+            is generated by intelligently loaning funds across exchanges.</span> Our sophisticated algorithm
+          consistently
+          outperforms market rates.</p>
+      </div>
+    </section>
+
+    <section id="results">
+      <div class="col">
+        <h2>See results</h2>
         <br>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, obcaecati laborum.</p>
         <div id="widget" class="card"></div>
       </div>
-
-      <div class="card-over" id="card-4-over"></div>
-      <div class="card-under" id="card-4-under"></div>
     </section>
 
-    <!-- 5 -->
-    <section class="container card">
-      <div class="card-body">
-        <div class="card-stat">
-          <h2>10 Million +</h2>
-          <p>US Dollars under management</p>
-        </div>
-        <div class="card-stat">
-          <h2>8.5%</h2>
-          <p>Minumum returns on average*</p>
-        </div>
-        <div class="card-stat">
-          <h2>Trusted</h2>
-          <p>Technology backed by
-            <a href="">iosiro</a>
-          </p>
-        </div>
+    <section id="risk">
+      <div class="text-left">
+        <h2> <span>Low risk.</span>
+          <br>High returns</h2>
         <br>
+        <p>A key part of our offering is taking extreme measures to protect our users funds and ensure that we
+          maintain the <span>highest possible standards of security.</span> Our in-house cybersecurity team as well
+          as engagement
+          with external experts allows us to offer unrivaled
+          security and
+          piece of mind to our users.</p>
       </div>
-      <div class="card-over" id="card-5-over"></div>
-      <div class="card-under" id="card-5-under"></div>
+      <div class="chart chart-risk"></div>
     </section>
 
-    <!-- 6 -->
-    <section class="container container-contact">
-      <div class="card-body contact">
-        <h1>Contact Us</h1>
+    <section id="personal">
+      <div class="chart chart-graph"></div>
+      <div class="text-right">
+        <h2>Personalised profits</h2>
         <br>
-        <p>If you would like to apply for a BitSwiss account or have any questions please reach out to us. We'd love to hear
-          from you. We are a global business, with an official office in Switzerland and a team distributed across the planet.
-          We understand that there is a great deal of trust involved in investing large sums of money, so please let us know
-          where you're reaching out from and we'd love to meet you in person if we can. Alternatively, we can set up a video
-          call to get to know you better and tell you a little more about our offering.</p>
-        <br>
-        <br>
-        <p class="address">10 rue de l’Arquebuse, Geneva, Switzerland
-        </p>
-        <br>
-        <br>
-        <h5>&copy;2018 Bitswiss</h5>
+        <p>Our clients recieve individual attention. This significantly enhances
+          the security of funds as we are able to monitor key elements of our
+          infrastructure. This would not be possible with a large volume of users. For this reason, an <span>application
+            process and minimum investment</span> is required for new investors.</p>
       </div>
-      <!-- <div class="card-over" id="card-6-over"></div>
-      <div class="card-under" id="card-6-under"></div> -->
     </section>
 
-    <!-- 7 -->
-    <section class="container container-footerlinks card card-hide">
-      <div class="card-body">
-        <ul>
-          <li>
-            <a href="">Ts & Cs</a>
-          </li>
-          <li>
-            <a href="">FAQs</a>
-          </li>
-          <li>
-            <a href="">Email</a>
-          </li>
-          <li>
-            <a href="">Sign up</a>
-          </li>
-        </ul>
+    <section id="join">
+      <div class="col">
+        <div class="text-mid">
+          <h2>Become a <span>BitSwiss</span> investor</h2>
+          <br>
+          <p>We understand that there is <span>a great deal of trust involved</span> in investing large sums of money,
+            so
+            please reach
+            out to us if you have questions. We are a <span>global business</span> , with an official office in
+            Switzerland and a team
+            distributed across the
+            planet.</p>
+        </div>
+        <a href="">
+          <div class="btn btn-thin">
+            <p>Sign Up Now</p>
+          </div>
+        </a>
       </div>
-      <div class="card-over" id="card-7-over"></div>
-      <div class="card-under" id="card-7-under"></div>
     </section>
 
   </main>
 
   <footer>
-    <nav>
-      <ul>
-        <li id="dot-1" class="dot-active"></li>
-        <li id="dot-2"></li>
-        <li id="dot-3"></li>
-        <li id="dot-4"></li>
-        <li id="dot-5"></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div id="footer-top">
+        BitSwiss &copy; 2018
+        <ul>
+          <li>
+            <a href="/">Ts & Cs</a>
+          </li>
+          <li>
+            <a href="/">FAQs</a>
+          </li>
+          <li>
+            <a href="/">Email</a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer-bottom">
+        <p>10 rue de l’Arquebuse, Geneva, Switzerland</p>
+        <p>+41 225 182 984</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="./src/js/main.js"></script>
 </body>
 

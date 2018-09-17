@@ -6,18 +6,19 @@ $font-secondary: "Mono";
 $colour-primary: #f7f7f7;
 $colour-secondary: #f0f0f0;
 $colour-accent: #111111;
-$colour-background: #262a2d;
-$colour-background-light: #2e3235;
-$colour-dark: #101517;
+$colour-background: #20262F;
+$colour-background-light: rgba(34, 40, 48, 0.85);
+$colour-dark: #20262F;
 $colour-font-accent: #526cff;
 // Gradients
-$gradient-footer: linear-gradient( #262a2d00, $colour-background);
-$gradient-hero: linear-gradient( #262a2d00, $colour-background-light);
+$gradient-footer: linear-gradient(#262a2d00, $colour-background);
+$gradient-hero: linear-gradient(rgba(59, 72, 84, 0.459), $colour-background);
+$gradient-accent: linear-gradient(#ffffff00, #3b59ff);
 $gradient-blu: linear-gradient(45deg, #1b0597, #3b59ff);
+
 // FX
-$shadow: 0px 4px 30px -6px rgba(0, 0, 0, .4);
-$shadow-light: 0px 4px 30px -6px rgba(0, 0, 0, .2);
-$shadow-hover: 0px 4px 50px -10px rgba(0, 0, 0, .3);
+$shadow: 0px 40px 50px -20px rgba(0, 0, 0, .1);
+$shadow-hover: 0px 20px 40px -10px rgba(0, 0, 0, .1);
 $transition: all .2s;
 // Size
 $container-width: 1080px;
