@@ -377,7 +377,7 @@ footer {
   }
 
   #menu {
-    height: 70vh;
+    height: 60vh;
   }
 
   #header {
@@ -448,6 +448,11 @@ footer {
     font-weight: 200;
     font-size: 13px;
     opacity: .8;
+  }
+
+  #copy {
+    transform: scale(.8);
+    opacity: .5;
   }
 
   .chart {

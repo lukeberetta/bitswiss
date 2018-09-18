@@ -354,7 +354,7 @@ footer {
     height: 100%;
     max-height: 90vh; }
   #menu {
-    height: 70vh; }
+    height: 60vh; }
   #header {
     width: 80vw;
     height: 100px;
@@ -420,6 +420,10 @@ footer {
     font-weight: 200;
     font-size: 13px;
     opacity: .8; }
+  #copy {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: .5; }
   .chart {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
