@@ -8,6 +8,7 @@ function toggleMenu() {
 
   let menu = document.querySelector("#menu");
   let hero = document.querySelector("#hero-image");
+  let heroGradient = document.querySelector("#hero-image-over");
   let footer = document.querySelector("footer");
   let main = document.querySelector("main");
 
@@ -19,6 +20,7 @@ function toggleMenu() {
 
   // setTimeout(() => {
   hero.classList.toggle("grow");
+  heroGradient.classList.toggle("dark");
   // }, timeoutB);
 
   // disableScroll();

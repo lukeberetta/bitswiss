@@ -11,8 +11,9 @@ $colour-background-light: rgba(34, 40, 48, 0.85);
 $colour-dark: #20262F;
 $colour-font-accent: #526cff;
 // Gradients
-$gradient-footer: linear-gradient(#262a2d00, $colour-background);
-$gradient-hero: linear-gradient(rgba(59, 72, 84, 0.459), $colour-background);
+$gradient-footer: linear-gradient(#20262F00, $colour-background);
+$gradient-hero: linear-gradient(rgba(59, 72, 84, 0.5), $colour-background);
+$gradient-hero-dark: linear-gradient(rgba(59, 72, 84, 0.9), $colour-background);
 $gradient-accent: linear-gradient(#ffffff00, #3b59ff);
 $gradient-blu: linear-gradient(45deg, #1b0597, #3b59ff);
 
