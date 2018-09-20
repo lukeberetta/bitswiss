@@ -150,6 +150,7 @@ section {
 #results {
   #widget {
     margin: 40px 0;
+    padding: 25px 10px 10px 10px;
     z-index: 1;
     width: 800px;
     height: 400px;
@@ -176,6 +177,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.row {
+  display: flex;
 }
 
 .text-right {
@@ -228,6 +233,18 @@ section {
   box-shadow: $shadow;
   border-radius: 8px;
   background-color: $colour-background-light;
+}
+
+.pad-right {
+  padding-right: 10px;
+}
+
+.pad-left {
+  padding-left: 10px;
+}
+
+.bolder {
+  font-weight: bolder;
 }
 
 // Buttons
@@ -320,7 +337,7 @@ section {
 }
 
 .dark {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .anim1 {
@@ -408,6 +425,7 @@ footer {
       margin: 40px 0;
       z-index: 1;
       width: 80vw;
+      max-width: 90vw;
       height: 200px;
     }
   }
@@ -431,7 +449,6 @@ footer {
 
   footer li {
     padding: 20px 20px 0px 20px;
-    font-weight: bolder;
   }
 
   #footer-top {
@@ -446,8 +463,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     font-weight: 200;
-    font-size: 13px;
+    font-size: 14px;
     opacity: .8;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .row {
+    justify-content: center;
   }
 
   #copy {

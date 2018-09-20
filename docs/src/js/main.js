@@ -1,4 +1,5 @@
 // Menu
+
 let isOpen = false;
 
 function toggleMenu() {
@@ -26,16 +27,46 @@ function toggleMenu() {
   // disableScroll();
 }
 
-// function disableScroll() {
-//   if (!isOpen) {
-//     isOpen = true;
-//     document.ontouchmove = function(e) {
-//       e.preventDefault();
-//     };
-//   } else {
-//     isOpen = false;
-//     document.ontouchmove = function(e) {
-//       return true;
-//     };
-//   }
-// }
+function disableScroll() {
+  if (!isOpen) {
+    isOpen = true;
+    document.ontouchmove = function(e) {
+      e.preventDefault();
+    };
+  } else {
+    isOpen = false;
+    document.ontouchmove = function(e) {
+      return true;
+    };
+  }
+}
+
+// Chart.js
+
+let ctx = document.getElementById('widget').getContext('2d');
+let chart = new Chart(ctx, {
+
+  // The type of chart
+  type: 'line',
+
+  // The dataset
+  data: {
+    labels: ["M-1", "M-1", "M-1", "M-1", "M-1", "M-1", "M-1"],
+    datasets: [{
+      label: false,
+      backgroundColor: '#516bff80',
+      borderColor: '#516bff',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  },
+
+  // Configuration
+  options: {
+    legend: {
+      display: false
+    },
+    tooltips: {
+      enabled: false
+    }
+  }
+});
