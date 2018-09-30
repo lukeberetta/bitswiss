@@ -111,6 +111,26 @@
         <br>
         <p>Insert your desired investment and <span>see what your money</span> can do for you.</p>
         <canvas id="widget" class="card"></canvas>
+        <div class="row col-mobile">
+          <div class="mg-bot-mobile" id="input">
+            <form action="">
+              <input onclick="updateWidget()" id="deposit" class="reset-fonts" type="number" style="border:none; background:none"
+                name="quantity" min="1" max="100" value="1">
+              ETH
+              <!-- Rounded switch -->
+              <label class="switch">
+                <input id="type" type="checkbox" onclick="updateWidget()">
+                <span class="slider2 round"></span>
+              </label>
+              BTC
+            </form>
+          </div>
+          <div class="slider-container col-mobile">
+            <p>over <span id="months"></span> months</p>
+            <input onmouseup="updateWidget()" ontouchend="updateWidget()" type="range" min="6" max="60" value="24"
+              class="slider mg-top-mobile" id="myRange">
+          </div>
+        </div>
       </div>
     </section>
 
